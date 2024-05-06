@@ -1,27 +1,31 @@
 import React from "react";
 import { View,Image, TouchableOpacity, Text  } from "react-native";
-import { Container, Header, Rotas } from "./styles";
+import { Container, Header, Rotas,LogoIm,ButtonRotas, Well } from "./styles";
+import Logo from '../../../assets/DragonFury.png'
+import MovierDell from '../../assets/movies/the_wheel_of_time.png'
 export default function Home() {
   return (
     <Container>
      <Header>
-     <Image source={1}/>
-     <Image source={1}/>
+     <LogoIm source={ Logo}/> 
+     </Header> 
 <Rotas>
  <TouchableOpacity>
-  <Text>Home</Text>
+  <ButtonRotas>Home</ButtonRotas>
  </TouchableOpacity>
  <TouchableOpacity>
-  <Text>Home</Text>
+  <ButtonRotas>Tv Shows</ButtonRotas>
  </TouchableOpacity>
  <TouchableOpacity>
-  <Text>Home</Text>
+  <ButtonRotas>Movies</ButtonRotas>
  </TouchableOpacity>
  <TouchableOpacity>
-  <Text>Home</Text>
+  <ButtonRotas>Kids</ButtonRotas>
  </TouchableOpacity>
 </Rotas>
-     </Header>
+    <TouchableOpacity>
+    <Well source={ MovierDell}/> 
+    </TouchableOpacity>
     </Container>
   );
 }
